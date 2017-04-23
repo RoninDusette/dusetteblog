@@ -1,0 +1,25 @@
+{% load staticfiles %}
+
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <title>{% block title %}{% endblock title %}</title>
+        {% include 'frontend/base_head.html' %}
+    </head>
+    <body>
+        {% include 'frontend/base_nav.html' %}
+
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <br>
+        <br>
+        {% block content %}
+        {% endblock content %}
+
+        {% include 'frontend/base_footer.html' %}
+
+        {% include 'frontend/base_js.html' %}
+
+    </body>
+</html>
