@@ -2,34 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d50af355-07d5-4c64-bba5-270082810fab" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/img/home/home-banner-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/img/logo-plain.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dusetteblog/apps/blog/templates/blog/article-detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dusetteblog/apps/blog/templates/blog/article-list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dusetteblog/apps/blog/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/css/normalize.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/js/plugins.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/js/vendor/jquery-1.12.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/js/vendor/modernizr-2.8.3.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base_footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base_head.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base_header.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base_js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base_nav.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/home.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dusetteblog/apps/frontend/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/img/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_temp/frontend/img/favicon.ico" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dusetteblog/apps/blog/admin.py" afterPath="$PROJECT_DIR$/dusetteblog/apps/blog/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dusetteblog/apps/blog/models.py" afterPath="$PROJECT_DIR$/dusetteblog/apps/blog/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dusetteblog/apps/blog/views.py" afterPath="$PROJECT_DIR$/dusetteblog/apps/blog/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dusetteblog/apps/frontend/views.py" afterPath="$PROJECT_DIR$/dusetteblog/apps/frontend/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dusetteblog/settings.py" afterPath="$PROJECT_DIR$/dusetteblog/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base_head.html" afterPath="$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base_head.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dusetteblog/urls.py" afterPath="$PROJECT_DIR$/dusetteblog/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_temp/frontend/css/main.css" afterPath="$PROJECT_DIR$/static_temp/frontend/css/main.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,23 +32,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/home.html">
+      <file leaf-file-name="base_head.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base_head.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="112">
+              <caret line="7" column="68" lean-forward="false" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base_nav.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base_nav.html">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dusetteblog/apps/frontend/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" column="69" lean-forward="false" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
+            <state relative-caret-position="64">
+              <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dusetteblog/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="26" column="73" lean-forward="false" selection-start-line="26" selection-start-column="73" selection-end-line="26" selection-end-column="73" />
               <folding>
-                <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#nav#0;n#!!top" expanded="true" />
+                <element signature="e#645#686#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base_js.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -105,19 +93,19 @@
         <option value="$PROJECT_DIR$/dusetteblog/apps/blog/admin.py" />
         <option value="$PROJECT_DIR$/dusetteblog/apps/blog/urls.py" />
         <option value="$PROJECT_DIR$/dusetteblog/apps/blog/models.py" />
-        <option value="$PROJECT_DIR$/dusetteblog/urls.py" />
         <option value="$PROJECT_DIR$/dusetteblog/apps/frontend/urls.py" />
         <option value="$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base_footer.html" />
         <option value="$PROJECT_DIR$/dusetteblog/apps/frontend/views.py" />
         <option value="$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base_header.html" />
         <option value="$PROJECT_DIR$/dusetteblog/settings.py" />
-        <option value="$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base_head.html" />
         <option value="$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base_js.html" />
         <option value="$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/js/main.js" />
         <option value="$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/css/main.css" />
         <option value="$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/home.html" />
         <option value="$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base.html" />
         <option value="$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base_nav.html" />
+        <option value="$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base_head.html" />
+        <option value="$PROJECT_DIR$/dusetteblog/urls.py" />
       </list>
     </option>
   </component>
@@ -172,7 +160,73 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="media_temp" />
+              <option name="myItemId" value="static_temp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dusetteblog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dusetteblog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static_temp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dusetteblog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dusetteblog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static_temp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dusetteblog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dusetteblog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static_temp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -187,22 +241,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="media_temp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uploads" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="04" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="23" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -426,44 +464,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="home" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dusetteblog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dusetteblog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dusetteblog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -533,11 +533,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/img" />
+      <recent name="$PROJECT_DIR$/static_temp/frontend/img" />
       <recent name="$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/img/home" />
       <recent name="$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/js/vendor" />
       <recent name="$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/css" />
-      <recent name="$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/img" />
-      <recent name="$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/dusetteblog/apps" />
@@ -857,26 +857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dusetteblog/apps/frontend/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dusetteblog/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="25" column="52" lean-forward="false" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
-          <folding>
-            <element signature="e#645#686#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base_footer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -949,14 +929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base_head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/js/vendor/slider-plugin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -973,19 +945,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/css/main.css">
+    <entry file="file://$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base_js.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+        <state relative-caret-position="144">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base_js.html">
+    <entry file="file://$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base_nav.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="272">
+          <caret line="17" column="69" lean-forward="false" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#nav#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1005,12 +979,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base_nav.html">
+    <entry file="file://$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="69" lean-forward="false" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
+        <state relative-caret-position="240">
+          <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base_head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="68" lean-forward="false" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dusetteblog/apps/frontend/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dusetteblog/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="26" column="73" lean-forward="false" selection-start-line="26" selection-start-column="73" selection-end-line="26" selection-end-column="73" />
           <folding>
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#nav#0;n#!!top" expanded="true" />
+            <element signature="e#645#686#0" expanded="true" />
           </folding>
         </state>
       </provider>
