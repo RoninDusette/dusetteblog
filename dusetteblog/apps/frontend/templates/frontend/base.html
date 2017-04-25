@@ -14,12 +14,23 @@
         <![endif]-->
         <br>
         <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <img src="{% static 'frontend/img/logo-plain.png' %}" alt="Ronin Dusette's logo" class="center-block" style="max-width: 100px;">
+                <h1><strong>Ronin Dusette</strong></h1>
+                <h4><em>Insights and Ramblings</em></h4>
+            </div>
+        </div>
+        <div class="container">
+            <hr>
+        </div>
+
         {% block content %}
         {% endblock content %}
 
-        {% include 'frontend/base_footer.html' %}
-
         {% include 'frontend/base_js.html' %}
-
+        {% include 'frontend/base_footer.html' %}
     </body>
 </html>
