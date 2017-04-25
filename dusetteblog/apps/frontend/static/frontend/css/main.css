@@ -111,7 +111,16 @@ body, html {
     border: none !important;
 }
 
-h1, h2, h3, h4 {
+.img-post-title {
+    font-size: 2.5em;
+    color: white;
+}
+
+.img-post-img:hover {
+    opacity: .9;
+}
+
+h1, h2, h3, h4, .img-post-title {
     font-family: 'Julius Sans One', sans-serif !important;
 }
 
@@ -121,6 +130,12 @@ h5, h6, p {
 
 .img-clickable:hover {
     opacity: .7;
+}
+
+.footer-main {
+    background-color: #1d1f21;
+    height: 200px;
+    max-height: 200px;
 }
 
 /* ==========================================================================
