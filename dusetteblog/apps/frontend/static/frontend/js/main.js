@@ -1,26 +1,8 @@
-$(document).ready(function() {
-    var divs = $('.slide > .img-post-img');
-
-    function fade() {
-        var current = $('.current');
-        var currentIndex = divs.index(current),
-            nextIndex = currentIndex + 1;
-
-        if (nextIndex >= divs.length) {
-            nextIndex = 0;
-        }
-
-        var next = divs.eq(nextIndex);
-
-        next.stop().fadeIn(2000, function() {
-            $(this).addClass('current');
-        });
-
-        current.stop().fadeOut(2000, function() {
-            $(this).removeClass('current');
-            setTimeout(fade, 2500);
-        });
+$( document ).ready(function() {
+    function slides() {
+        $(".slide-1 > .img-post-img").fadeIn().delay(5000).fadeOut();
+        $(".slide-2 > .img-post-img").delay(5800).fadeIn().delay(5000).fadeOut();
+        $(".slide-3 > .img-post-img").delay(12500).fadeIn().delay(5000).fadeOut(slides);
     }
-
-    fade();
+    slides();
 });
