@@ -1,90 +1,56 @@
 {% extends 'frontend/base.html' %}
 {% load staticfiles %}
 
-{% block title %}blog{% endblock title %}
+{% block title %}Insights and Ramblings | Ronin Dusette {% endblock title %}
 
 {% block content %}
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <a href="" style="text-decoration: none;">
-                    <div class="img-post-img" style="vertical-align: middle; line-height: 350px; width: 100%; height: 500px; background:url('{% static 'frontend/img/home/The-Wall_by-Ronin-Dusette.jpg' %}') no-repeat center; background-size:contain;">
-                        <div class="img-post-title text-center">
-                            <strong>Blog title (slideshow)</strong>
-                        </div>
-                    </div>
-                </a>
-                <hr>
-                <h5><strong>RECENT POSTS</strong></h5>
-                <hr>
-                <div class="row">
-                    <div class="col-md-6">
-                        <img src="{% static 'frontend/img/home/The-Wall_by-Ronin-Dusette.jpg' %}" style="width: 100%" alt="">
-                    </div>
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <a href="#">CATEGORY</a> | 2017-6-1
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h4><strong>SOME AWESOME BLOG TITLE THAT I HAVE NOT WRITTEN YET.</strong></h4>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p>Some description of whatever the hell I am going to write. Truncate the body of the actual blog by some characters here...</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <a href="#">READ MORE</a>
-                            </div>
-                        </div>
-                    </div>
+    {% for article in articles %}
+        <a href="" style="text-decoration: none; display: none;" class="blog-slide slide {% if forloop.counter == '1' %}current{% endif %}">
+            <div class="img-post-img" style="vertical-align: middle; line-height: 350px; width: 100%; height: 500px; background:url('/media/{{ article.photo }}') no-repeat center; background-size:contain;">
+                <div class="img-post-title text-center">
+                    <strong>{{ article.title }}</strong>
                 </div>
             </div>
-            <div class="col-md-4">
-                <h4><strong>ABOUT ME</strong></h4>
-                <hr>
-                <img class="img-circle center-block" style="max-width: 300px;" src="{% static 'frontend/img/Ronin-Dusette-Profile-Pic.jpg' %}">
+        </a>
+    {% endfor %}
+    <hr>
+    <h5><strong>RECENT POSTS</strong></h5>
+    <hr>
+    {% for article in articles %}
+        <a href="{% url 'article-detail' slug=article.slug %}">
+        <div class="row">
+            <div class="col-md-6">
+                <img class="img-clickable" src="/media/{{ article.photo }}" style="width: 100%" alt="{{ article.title }}">
+            </div>
+            <div class="col-md-6">
                 <div class="row">
                     <div class="col-md-12">
-                        <br>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        </p>
+                        <a href="#">{{ article.category }}</a> | {{ article.date_added }}
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <hr>
-                        <h4><strong>FOLLOW ME</strong><span class="addthis_inline_follow_toolbox_498g pull-right" style="margin-top: -20px;"></span></h4>
-                        <hr>
+                        <h4><strong>{{ article.title }}</strong></h4>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <h4><strong>RECENT INSTAGRAM POSTS</strong></h4>
-                        <hr>
-                        <iframe src="//lightwidget.com/widgets/52d380a32bed5334b563dae214317c10.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
-                        <hr>
+                        <p>{{ article.subtitle }}</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <h4><strong>RECENT POSTS</strong></h4>
-                        <hr>
-                        <a href="#"><img src="{% static 'frontend/img/home/The-Wall_by-Ronin-Dusette.jpg' %}" style="max-width: 100%" alt="" class="img-clickable"></a>
-                        <h4 class="text-center"><a href="#">Some Post Title Here</a></h4>
-                        <h5 class="text-center"><em>2017/5/1</em></h5>
+                        <p>{% autoescape off %}{{ article.body|truncatechars:140 }}{% endautoescape %}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="{% url 'article-detail' slug=article.slug %}">READ MORE</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <br>
+        </a>
+    {% endfor %}
 {% endblock content %}
