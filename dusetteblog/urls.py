@@ -27,4 +27,5 @@ urlpatterns = [
     url(r'^favicon\.ico$', RedirectView.as_view(url='/static/frontend/img/favicon.ico')),
     url(r'', include('dusetteblog.apps.frontend.urls')),
     url(r'', include('dusetteblog.apps.blog.urls')),
+    url(r'', include('dusetteblog.apps.contact.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

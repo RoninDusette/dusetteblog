@@ -37,10 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'imagekit',
     'ckeditor',
     'ckeditor_uploader',
     'dusetteblog.apps.frontend',
     'dusetteblog.apps.blog',
+    'dusetteblog.apps.contact',
 ]
 
 MIDDLEWARE = [

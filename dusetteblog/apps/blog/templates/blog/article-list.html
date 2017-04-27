@@ -2,5 +2,41 @@
 {% load staticfiles %}
 
 {% block content %}
-article list
+{% for article in article_list reversed %}
+        <a href="{% url 'article-detail' slug=article.slug %}">
+        <div class="row">
+            <div class="col-md-6">
+                <img class="img-clickable" src="/media/{{ article.photo }}" style="width: 100%" alt="{{ article.title }}">
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="#">{{ article.category }}</a> | {{ article.date_added }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4><strong>{{ article.title }}</strong></h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>{{ article.subtitle }}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>{% autoescape off %}{{ article.body|truncatechars:140 }}{% endautoescape %}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="{% url 'article-detail' slug=article.slug %}">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        </a>
+    {% endfor %}
 {% endblock content %}
