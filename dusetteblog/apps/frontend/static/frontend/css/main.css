@@ -121,9 +121,10 @@ body, html {
 }
 
 .category-button:hover {
-    background-color: #337ab7 !important;
+    background-color: #777 !important;
     color: white !important;
     transition: .2s;
+    border-radius: 0 !important;
 }
 
 h1, h2, h3, h4, .img-post-title {

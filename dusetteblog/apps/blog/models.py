@@ -1,6 +1,7 @@
 from django.db import models
 from django.template.defaultfilters import slugify
 from imagekit.models import ProcessedImageField
+from imagekit.processors import ResizeToFill
 from ckeditor_uploader.fields import RichTextUploadingField
 import datetime
 
@@ -17,7 +18,7 @@ class Article(models.Model):
     date_added = models.DateField(auto_now_add=True)
     date_updated = models.DateField(auto_now=True)
     body = RichTextUploadingField()
-    photo = ProcessedImageField(format='JPEG', options={'quality': 60})
+    photo = ProcessedImageField(format='JPEG', options={'quality': 60}, processors=[ResizeToFill(720, 510)])
     slug = models.SlugField(unique=True, blank=True, editable=False)
 
     def __str__(self):
