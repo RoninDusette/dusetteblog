@@ -23,7 +23,7 @@
     <h5><strong>RECENT POSTS</strong></h5>
     <hr>
     {% for article in articles|slice:':6' reversed %}
-        <a href="{% url 'article-detail' slug=article.slug %}">
+        <a href="{% url 'article-detail' slug=article.slug %}" class="img-post-img">
         <div class="row">
             <div class="col-md-6">
                 <img class="img-clickable" src="/media/{{ article.photo }}" style="width: 100%" alt="{{ article.title }}">
@@ -36,17 +36,12 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <h4><strong>{{ article.title }}</strong></h4>
+                        <h3><strong>{{ article.title }}</strong></h3>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <p>{{ article.subtitle }}</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>{% autoescape off %}{{ article.body|truncatechars:140 }}{% endautoescape %}</p>
+                        <h4>{{ article.subtitle }}</h4>
                     </div>
                 </div>
                 <div class="row">

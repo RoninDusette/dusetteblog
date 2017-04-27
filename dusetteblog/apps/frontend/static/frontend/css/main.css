@@ -117,7 +117,8 @@ body, html {
 }
 
 .img-post-img:hover {
-    opacity: .9;
+    opacity: .95;
+    transition: .2s;
 }
 
 .category-button:hover {
