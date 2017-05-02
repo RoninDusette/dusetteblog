@@ -6,15 +6,18 @@ from ckeditor_uploader.fields import RichTextUploadingField
 import datetime
 
 
+class Category(models.Model):
+    name = models.CharField(max_length=200)
+    photo = ProcessedImageField(format='JPEG', options={'quality': 60}, processors=[ResizeToFill(720, 510)], null=True, blank=True)
+
+    def __str__(self):
+        return self.name
+
+
 class Article(models.Model):
-    CATEGORY_CHOICES = (
-        ('General', 'General'),
-        ('Photography', 'Photography'),
-        ('Tech', 'Tech'),
-    )
     title = models.CharField(max_length=255)
     subtitle = models.CharField(max_length=255)
-    category = models.CharField(max_length=15, choices=CATEGORY_CHOICES)
+    category = models.ForeignKey(Category)
     date_added = models.DateField(auto_now_add=True)
     date_updated = models.DateField(auto_now=True)
     body = RichTextUploadingField()
