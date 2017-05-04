@@ -43,8 +43,8 @@
         <hr>
         <h4><strong>CATEGORIES</strong></h4>
         <hr>
-        <a href="#" class="btn btn-default btn-block category-button" style="border: none; text-decoration: none;">GENERAL</a>
-        <a href="#" class="btn btn-default btn-block category-button" style="border: none; text-decoration: none;">PHOTOGRAPHY</a>
-        <a href="#" class="btn btn-default btn-block category-button" style="border: none; text-decoration: none;">TECH</a>
+        {% for category in categories %}
+        <a href="#" class="btn btn-default btn-block category-button" style="border: none; text-decoration: none;">{{ category.name }}</a>
+        {% endfor %}
     </div>
 </div>
