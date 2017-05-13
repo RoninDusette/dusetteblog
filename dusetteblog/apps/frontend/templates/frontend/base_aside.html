@@ -33,9 +33,12 @@
     <div class="col-md-12 img-post-img">
         <h4><strong>RECENT ARTICLES</strong></h4>
         <hr>
-        <a href="#"><img src="{% static 'frontend/img/home/The-Wall_by-Ronin-Dusette.jpg' %}" style="max-width: 100%" alt="" class="img-clickable"></a>
-        <h4 class="text-center"><a href="#"><strong>Some Post Title Here</strong></a></h4>
-        <h5 class="text-center"><em>2017/5/1</em></h5>
+        {% for article in articles|slice:':3' %}
+            <a href="{% url 'article-detail' slug=article.slug %}"><img src="/media/{{ article.photo }}" style="max-width: 100%" alt="" class="img-clickable"></a>
+            <h4 class="text-center"><a href="{% url 'article-detail' slug=article.slug %}"><strong>{{ article.title }}</strong></a></h4>
+            <h5 class="text-center"><em>{{ article.date_added }}</em></h5>
+            <hr>
+        {% endfor %}
     </div>
 </div>
 <div class="row">
@@ -44,7 +47,7 @@
         <h4><strong>CATEGORIES</strong></h4>
         <hr>
         {% for category in categories %}
-        <a href="#" class="btn btn-default btn-block category-button" style="border: none; text-decoration: none;">{{ category.name }}</a>
+        <a href="{% url 'category-detail' slug=category.slug %}" class="btn btn-default btn-block category-button" style="border: none; text-decoration: none;">{{ category.name }}</a>
         {% endfor %}
     </div>
 </div>

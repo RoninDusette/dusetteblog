@@ -1,7 +1,7 @@
 {% extends 'frontend/base.html' %}
 {% load staticfiles %}
 
-{% block title %}Insights and Ramblings | Ronin Dusette {% endblock title %}
+{% block title %}Ronin Dusette | Insights and Ramblings{% endblock title %}
 
 {% block content %}
     <div class="wrapper" style="max-height: 500px;">
@@ -31,7 +31,7 @@
             <div class="col-md-6">
                 <div class="row">
                     <div class="col-md-12">
-                        <a href="#">{{ article.category.name }}</a> | {{ article.date_added }}
+                        <a href="{% url 'category-detail' slug=article.category.slug %}">{{ article.category.name }}</a> | {{ article.date_added }}
                     </div>
                 </div>
                 <div class="row">

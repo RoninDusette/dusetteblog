@@ -14,10 +14,10 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-left" style="margin-left: -15px">
-        <li><a class="category-button" href="{% url 'home' %}">HOME</a></li>
-        <li><a class="category-button" href="{% url 'article-list' %}">ARTICLES</a></li>
+        <li class="{% if request.path == "/" %} active{% endif %}"><a class="category-button" href="{% url 'home' %}">HOME</a></li>
+        <li class="{% if request.path == "/articles/" %} active{% endif %}"><a class="category-button" href="{% url 'article-list' %}">ARTICLES</a></li>
         <li><a class="category-button" href="https://www.dusette.net">PORTFOLIO</a></li>
-        <li><a class="category-button" href="#">CONTACT</a></li>
+        <li class="{% if request.path == "/contact/" %} active{% endif %}"><a class="category-button" href="{% url 'contact' %}">CONTACT</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
           <li><a href="https://www.instagram.com/ronindusette"><i class="fa fa-instagram fa-1x" aria-hidden="true"></i></a></li>

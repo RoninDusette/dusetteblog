@@ -9,9 +9,15 @@ import datetime
 class Category(models.Model):
     name = models.CharField(max_length=200)
     photo = ProcessedImageField(format='JPEG', options={'quality': 60}, processors=[ResizeToFill(720, 510)], null=True, blank=True)
+    slug = models.SlugField(blank=True, editable=False)
 
     def __str__(self):
         return self.name
+
+    def save(self):
+        super(Category, self).save()
+        self.slug = slugify(self.name)
+        super(Category, self).save()
 
 
 class Article(models.Model):
@@ -22,7 +28,7 @@ class Article(models.Model):
     date_updated = models.DateField(auto_now=True)
     body = RichTextUploadingField()
     photo = ProcessedImageField(format='JPEG', options={'quality': 60}, processors=[ResizeToFill(720, 510)])
-    slug = models.SlugField(unique=True, blank=True, editable=False)
+    slug = models.SlugField(blank=True, editable=False)
 
     def __str__(self):
         return self.title
