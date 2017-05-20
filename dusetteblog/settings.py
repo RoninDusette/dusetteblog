@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'dusetteblog.apps.frontend',
     'dusetteblog.apps.blog',
     'dusetteblog.apps.contact',
+    'dusetteblog.apps.item_shop_specials',
 ]
 
 MIDDLEWARE = [

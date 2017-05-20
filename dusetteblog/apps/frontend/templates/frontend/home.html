@@ -20,7 +20,7 @@
         </ul>
     </div>
     <hr>
-    <h5><strong>RECENT POSTS</strong></h5>
+    <h4><strong>RECENT ARTICLES</strong></h4>
     <hr>
     {% for article in articles|slice:':6' reversed %}
         <a href="{% url 'article-detail' slug=article.slug %}" class="img-post-img">

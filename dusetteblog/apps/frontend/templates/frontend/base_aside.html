@@ -23,31 +23,33 @@
 </div>
 <div class="row">
     <div class="col-md-12">
-        <h4><strong>RECENT INSTAGRAM POSTS</strong></h4>
+        <h4 class="text-center"><strong>RECENT INSTAGRAM POSTS</strong></h4>
         <hr>
         <iframe src="//lightwidget.com/widgets/52d380a32bed5334b563dae214317c10.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
         <hr>
     </div>
 </div>
+{% if specials %}
 <div class="row">
     <div class="col-md-12 img-post-img">
-        <h4><strong>RECENT ARTICLES</strong></h4>
+        <h4 class="text-center"><strong>ITEM SHOP SPECIALS</strong></h4>
+        {% for special in specials %}
         <hr>
-        {% for article in articles|slice:':3' %}
-            <a href="{% url 'article-detail' slug=article.slug %}"><img src="/media/{{ article.photo }}" style="max-width: 100%" alt="" class="img-clickable"></a>
-            <h4 class="text-center"><a href="{% url 'article-detail' slug=article.slug %}"><strong>{{ article.title }}</strong></a></h4>
-            <h5 class="text-center"><em>{{ article.date_added }}</em></h5>
-            <hr>
+        <a href="{{ special.item_url }}"><img src="/media/{{ special.photo }}" style="max-width: 100%" alt="" class="img-clickable"></a>
+        <h4 class="text-center"><strong>{{ special.name }}</strong></h4>
+
         {% endfor %}
     </div>
 </div>
+{% endif %}
 <div class="row">
-    <div class="col-md-12">
-        <hr>
-        <h4><strong>CATEGORIES</strong></h4>
-        <hr>
-        {% for category in categories %}
-        <a href="{% url 'category-detail' slug=category.slug %}" class="btn btn-default btn-block category-button" style="border: none; text-decoration: none;">{{ category.name }}</a>
+    <div class="col-md-12 img-post-img">
+        <h4 class="text-center"><strong>POPULAR ARTICLES</strong></h4>
+        {% for article in articles|slice:':3' reversed %}
+            <hr>
+            <a href="{% url 'article-detail' slug=article.slug %}"><img src="/media/{{ article.photo }}" style="max-width: 100%" alt="" class="img-clickable"></a>
+            <h4 class="text-center"><a href="{% url 'article-detail' slug=article.slug %}"><strong>{{ article.title }}</strong></a></h4>
+            <h5 class="text-center"><em>{{ article.date_added }}</em></h5>
         {% endfor %}
     </div>
 </div>

@@ -28,4 +28,5 @@ urlpatterns = [
     url(r'', include('dusetteblog.apps.frontend.urls')),
     url(r'', include('dusetteblog.apps.blog.urls')),
     url(r'', include('dusetteblog.apps.contact.urls')),
+    url(r'', include('dusetteblog.apps.item_shop_specials.urls'))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
