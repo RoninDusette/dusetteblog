@@ -5,3 +5,9 @@ $(document).ready(function(){
       speed: 900
   });
 });
+
+$(document).ready(function () {
+   $(".home-title").slideDown("600").fadeIn("slow", function () {
+       $(".home-subtitle").slideUp("slow").fadeIn("slow");
+   });
+});

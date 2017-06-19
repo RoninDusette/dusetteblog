@@ -129,6 +129,11 @@ body {
     color: white;
 }
 
+.img-post-img {
+    background-color: white !important;
+    border: none !important;
+}
+
 .img-post-img:hover {
     opacity: .95;
     transition: .2s;
@@ -156,8 +161,16 @@ h1, h2, h3, h4, .img-post-title {
     font-family: 'Julius Sans One', sans-serif !important;
 }
 
+h3, h4 {
+    color: #420E09 !important;
+}
+
 h5, h6, p {
     font-family: 'Cambay', sans-serif !important;
+}
+
+.main-content, .img-post-img, .bx-wrapper {
+    border: none !important;
 }
 
 .img-clickable:hover {
@@ -165,7 +178,6 @@ h5, h6, p {
 }
 
 .footer-main {
-    background-color: #324851;
     height: 200px;
     max-height: 200px;
 }

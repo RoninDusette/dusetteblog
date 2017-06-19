@@ -4,6 +4,31 @@
 {% block title %}Ronin Dusette | Insights and Ramblings{% endblock title %}
 
 {% block content %}
+            <div style="margin-top: -40px;">
+            <div class="row">
+                <div class="col-md-12 hidden-sm hidden-xs">
+                    <h1 class="home-title" style=" display: none; color: white;  position: absolute; top: 20%; left: 10%; font-size: 6em;"><strong><span style="color: #420E09;">r</span>onin<span style="color: #420E09;">D</span>usette</strong></h1>
+                    <h2 class="home-subtitle" style="display: none; color: white; position: absolute; bottom: 18%; right: 16%; opacity: .4;"><span style="color: #420E09;">.</span>Standing<span style="color: #420E09;">.</span>on<span style="color: #420E09;">.</span>the<span style="color: #420E09;">.</span>shoulders<span style="color: #420E09;">.</span>of<span style="color: #420E09;">.</span>giants<span style="color: #420E09;">.</span></h2>
+                    <img src="{% static 'frontend/img/home/Blog-Banner.png' %}" class="img-responsive" id="grad" alt="">
+                </div>
+                <div class="col-sm-12 hidden-md hidden-lg text-center">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h1 style="color: white"><strong><span style="color: #420E09;">r</span>onin<span style="color: #420E09;">D</span>usette</strong></h1>
+                    <h2 style="color: white; opacity: .4;"><span style="color: #420E09;">.</span>Standing<span style="color: #420E09;">.</span>on<span style="color: #420E09;">.</span>the<span style="color: #420E09;">.</span>shoulders<span style="color: #420E09;">.</span>of<span style="color: #420E09;">.</span>giants<span style="color: #420E09;">.</span></h2>
+                    <img src="{% static 'frontend/img/home/Blog-Banner.png' %}" class="img-responsive" id="grad" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container main-content">
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-8">
     <div class="wrapper" style="max-height: 500px;">
         <ul class="bxslider">
             {% for article in articles reversed %}

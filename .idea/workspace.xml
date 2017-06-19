@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d50af355-07d5-4c64-bba5-270082810fab" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/img/home/Blog-Banner.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/img/home/home-banner-1.jpg" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/img/home/logo-plain.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/img/home/Blog-Banner.png" afterPath="$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/img/home/Blog-Banner.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/css/main.css" afterPath="$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/js/main.js" afterPath="$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base.html" afterPath="$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base_nav.html" afterPath="$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base_nav.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base_footer.html" afterPath="$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base_footer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/home.html" afterPath="$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/home.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,12 +21,61 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
               <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" column="38" lean-forward="false" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+              <folding>
+                <element signature="e#173#199#0#HTML" expanded="true" />
+                <element signature="e#334#429#0#HTML" expanded="true" />
+                <element signature="e#444#467#0#HTML" expanded="true" />
+                <element signature="e#486#509#0#HTML" expanded="true" />
+                <element signature="e#585#679#0#HTML" expanded="true" />
+                <element signature="e#686#709#0#HTML" expanded="true" />
+                <element signature="e#732#755#0#HTML" expanded="true" />
+                <element signature="e#772#795#0#HTML" expanded="true" />
+                <element signature="e#813#836#0#HTML" expanded="true" />
+                <element signature="e#860#883#0#HTML" expanded="true" />
+                <element signature="e#900#923#0#HTML" expanded="true" />
+                <element signature="e#944#967#0#HTML" expanded="true" />
+                <element signature="e#1347#1367#0#HTML" expanded="true" />
+                <element signature="e#1382#1405#0#HTML" expanded="true" />
+                <element signature="e#1424#1447#0#HTML" expanded="true" />
+                <element signature="e#1501#1535#0#HTML" expanded="true" />
+                <element signature="e#1542#1565#0#HTML" expanded="true" />
+                <element signature="e#1588#1611#0#HTML" expanded="true" />
+                <element signature="e#1628#1651#0#HTML" expanded="true" />
+                <element signature="e#1669#1692#0#HTML" expanded="true" />
+                <element signature="e#1716#1739#0#HTML" expanded="true" />
+                <element signature="e#1756#1779#0#HTML" expanded="true" />
+                <element signature="e#1800#1823#0#HTML" expanded="true" />
+                <element signature="e#2206#2232#0#HTML" expanded="true" />
+                <element signature="e#2394#2424#0#HTML" expanded="true" />
+                <element signature="e#2476#2643#0#HTML" expanded="true" />
+                <element signature="e#2754#2828#0#HTML" expanded="true" />
+                <element signature="e#3377#3396#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -45,10 +96,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/dusetteblog/settings.py" />
-        <option value="$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/home.html" />
-        <option value="$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/css/main.css" />
         <option value="$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base_nav.html" />
+        <option value="$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base_footer.html" />
+        <option value="$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/css/main.css" />
+        <option value="$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/js/main.js" />
         <option value="$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base.html" />
+        <option value="$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/home.html" />
       </list>
     </option>
   </component>
@@ -208,6 +261,10 @@
               <option name="myItemId" value="frontend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -278,6 +335,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DusetteBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DusetteBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dusetteblog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -560,14 +647,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="1054" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33679834" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33679834" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32848233" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22257721" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22257721" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -613,9 +701,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="50" lean-forward="true" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
-          <folding>
-            <element signature="e#181#207#0#HTML" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -693,24 +779,55 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base_footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="108" column="29" lean-forward="false" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="29" />
+        <state relative-caret-position="156">
+          <caret line="132" column="27" lean-forward="false" selection-start-line="132" selection-start-column="27" selection-end-line="132" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/home.html">
+    <entry file="file://$PROJECT_DIR$/dusetteblog/apps/frontend/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          <folding>
-            <element signature="e#181#207#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="1" column="24" lean-forward="true" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dusetteblog/apps/frontend/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/base_aside.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dusetteblog/apps/frontend/static/frontend/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -719,6 +836,43 @@
         <state relative-caret-position="225">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dusetteblog/apps/frontend/templates/frontend/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="38" lean-forward="false" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+          <folding>
+            <element signature="e#173#199#0#HTML" expanded="true" />
+            <element signature="e#334#429#0#HTML" expanded="true" />
+            <element signature="e#444#467#0#HTML" expanded="true" />
+            <element signature="e#486#509#0#HTML" expanded="true" />
+            <element signature="e#585#679#0#HTML" expanded="true" />
+            <element signature="e#686#709#0#HTML" expanded="true" />
+            <element signature="e#732#755#0#HTML" expanded="true" />
+            <element signature="e#772#795#0#HTML" expanded="true" />
+            <element signature="e#813#836#0#HTML" expanded="true" />
+            <element signature="e#860#883#0#HTML" expanded="true" />
+            <element signature="e#900#923#0#HTML" expanded="true" />
+            <element signature="e#944#967#0#HTML" expanded="true" />
+            <element signature="e#1347#1367#0#HTML" expanded="true" />
+            <element signature="e#1382#1405#0#HTML" expanded="true" />
+            <element signature="e#1424#1447#0#HTML" expanded="true" />
+            <element signature="e#1501#1535#0#HTML" expanded="true" />
+            <element signature="e#1542#1565#0#HTML" expanded="true" />
+            <element signature="e#1588#1611#0#HTML" expanded="true" />
+            <element signature="e#1628#1651#0#HTML" expanded="true" />
+            <element signature="e#1669#1692#0#HTML" expanded="true" />
+            <element signature="e#1716#1739#0#HTML" expanded="true" />
+            <element signature="e#1756#1779#0#HTML" expanded="true" />
+            <element signature="e#1800#1823#0#HTML" expanded="true" />
+            <element signature="e#2206#2232#0#HTML" expanded="true" />
+            <element signature="e#2394#2424#0#HTML" expanded="true" />
+            <element signature="e#2476#2643#0#HTML" expanded="true" />
+            <element signature="e#2754#2828#0#HTML" expanded="true" />
+            <element signature="e#3377#3396#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
