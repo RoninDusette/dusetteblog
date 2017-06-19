@@ -101,18 +101,23 @@ body, html {
     overflow-x: hidden !important;
 }
 
-.container {
-    width: 100% !important;
-}
-
-.nav-logo {
-    margin-top: -13px;
-    max-width: 47px;
+body {
+    background-color: #324851 !important;
 }
 
 .navbar-default {
     background-color: #324851 !important;
     border: none !important;
+}
+
+.container {
+    width: 80% !important;
+    background-color: white !important;
+}
+
+.nav-logo {
+    margin-top: -13px;
+    max-width: 47px;
 }
 
 .nav > li {
@@ -166,12 +171,13 @@ h5, h6, p {
 }
 
 hr {
-    border-top: 1px solid grey !important;
-    opacity: .2;
+    /*border-top: 1px solid grey !important;*/
+    /*opacity: .2;*/
+    display: none;
 }
 
 .article-section {
-     border-right: .5px ridge grey;
+     /*border-right: .5px ridge grey;*/
 }
 
  .social-images-header {
