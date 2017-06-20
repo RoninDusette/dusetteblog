@@ -4,79 +4,66 @@
 {% block title %}Ronin Dusette | Insights and Ramblings{% endblock title %}
 
 {% block content %}
-            <div style="margin-top: -40px;">
-            <div class="row">
-                <div class="col-md-12 hidden-sm hidden-xs">
-                    <h1 class="home-title" style=" display: none; color: white;  position: absolute; top: 20%; left: 10%; font-size: 6em;"><strong><span style="color: #420E09;">r</span>onin<span style="color: #420E09;">D</span>usette</strong></h1>
-                    <h2 class="home-subtitle" style="display: none; color: white; position: absolute; bottom: 18%; right: 16%; opacity: .4;"><span style="color: #420E09;">.</span>Standing<span style="color: #420E09;">.</span>on<span style="color: #420E09;">.</span>the<span style="color: #420E09;">.</span>shoulders<span style="color: #420E09;">.</span>of<span style="color: #420E09;">.</span>giants<span style="color: #420E09;">.</span></h2>
-                    <img src="{% static 'frontend/img/home/Blog-Banner.png' %}" class="img-responsive" id="grad" alt="">
+    <div class="container main-content">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="wrapper" style="max-height: 500px;">
+                        <ul class="bxslider">
+                            {% for article in articles reversed %}
+                                <li>
+                                    <a href="/article/{{ article.slug }}" style="text-decoration: none;">
+                                        <div class="img-post-img" style="vertical-align: middle; line-height: 650px; width: 100%; height: 500px; background:url('/media/{{ article.photo }}') no-repeat center; background-size:contain;">
+                                            <div class="img-post-title text-center">
+                                                <strong style="background-color: black; opacity: .8; padding: 10px 10px 5px 10px;">{{ article.title }}</strong>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-12 hidden-md hidden-lg text-center">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <h1 style="color: white"><strong><span style="color: #420E09;">r</span>onin<span style="color: #420E09;">D</span>usette</strong></h1>
-                    <h2 style="color: white; opacity: .4;"><span style="color: #420E09;">.</span>Standing<span style="color: #420E09;">.</span>on<span style="color: #420E09;">.</span>the<span style="color: #420E09;">.</span>shoulders<span style="color: #420E09;">.</span>of<span style="color: #420E09;">.</span>giants<span style="color: #420E09;">.</span></h2>
-                    <img src="{% static 'frontend/img/home/Blog-Banner.png' %}" class="img-responsive" id="grad" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="container main-content">
-            <br>
-            <br>
-            <br>
-            <div class="row">
-                <div class="col-md-8">
-    <div class="wrapper" style="max-height: 500px;">
-        <ul class="bxslider">
-            {% for article in articles reversed %}
-                <li>
-                    <a href="/article/{{ article.slug }}" style="text-decoration: none;">
-                        <div class="img-post-img" style="vertical-align: middle; line-height: 650px; width: 100%; height: 500px; background:url('/media/{{ article.photo }}') no-repeat center; background-size:contain;">
-                            <div class="img-post-title text-center">
-                                <strong style="background-color: black; opacity: .8; padding: 10px 10px 5px 10px;">{{ article.title }}</strong>
+                <div class="row">
+                    <div class="col-md-12">
+                                        <hr>
+                <h4><strong>RECENT ARTICLES</strong></h4>
+                <hr>
+                {% for article in articles|slice:':6' reversed %}
+                    <a href="{% url 'article-detail' slug=article.slug %}" class="img-post-img">
+                        <div class="row article-section">
+                            <div class="col-md-6">
+                                <img class="img-clickable" src="/media/{{ article.photo }}" style="width: 100%" alt="{{ article.title }}">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <a href="{% url 'category-detail' slug=article.category.slug %}">{{ article.category.name }}</a> | {{ article.date_added }}
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h3><strong>{{ article.title }}</strong></h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h4>{{ article.subtitle }}</h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <a href="{% url 'article-detail' slug=article.slug %}">READ MORE</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <br>
                     </a>
-                </li>
-            {% endfor %}
-        </ul>
-    </div>
-    <hr>
-    <h4><strong>RECENT ARTICLES</strong></h4>
-    <hr>
-    {% for article in articles|slice:':6' reversed %}
-        <a href="{% url 'article-detail' slug=article.slug %}" class="img-post-img">
-        <div class="row article-section">
-            <div class="col-md-6">
-                <img class="img-clickable" src="/media/{{ article.photo }}" style="width: 100%" alt="{{ article.title }}">
-            </div>
-            <div class="col-md-6">
-                <div class="row">
-                    <div class="col-md-12">
-                        <a href="{% url 'category-detail' slug=article.category.slug %}">{{ article.category.name }}</a> | {{ article.date_added }}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3><strong>{{ article.title }}</strong></h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4>{{ article.subtitle }}</h4>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <a href="{% url 'article-detail' slug=article.slug %}">READ MORE</a>
+                {% endfor %}
                     </div>
                 </div>
             </div>
-        </div>
-        <br>
-        </a>
-    {% endfor %}
 {% endblock content %}
