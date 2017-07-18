@@ -42,14 +42,3 @@
     </div>
 </div>
 {% endif %}
-<div class="row">
-    <div class="col-md-12 img-post-img">
-        <h4 class="text-center"><strong>POPULAR ARTICLES</strong></h4>
-        {% for article in articles|slice:':3' reversed %}
-            <hr>
-            <a href="{% url 'article-detail' slug=article.slug %}"><img src="/media/{{ article.photo }}" style="max-width: 100%" alt="" class="img-clickable"></a>
-            <h4 class="text-center"><a href="{% url 'article-detail' slug=article.slug %}"><strong>{{ article.title }}</strong></a></h4>
-            <h5 class="text-center"><em>{{ article.date_added }}</em></h5>
-        {% endfor %}
-    </div>
-</div>
