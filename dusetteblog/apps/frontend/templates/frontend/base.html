@@ -1,0 +1,41 @@
+{% load staticfiles %}
+
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <title>{% block title %}{% endblock title %}</title>
+        {% include 'frontend/base_head.html' %}
+    </head>
+    <body>
+        {% include 'frontend/base_nav.html' %}
+
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row" style="margin-bottom: -250px;">
+            <div class="col-md-12 text-center">
+                <h1 class="text-red title-font" style="font-size: 5em;">Ronin Dusette</h1>
+                <h3><em>Insights and Ramblings</em></h3>
+            </div>
+        </div>
+
+    <div class="container main-content">
+        <div class="row">
+            <div class="col-md-9">
+                {% block content %}{% endblock content %}
+            </div>
+            <div class="col-md-3">
+                {% include 'frontend/base_aside.html' %}
+            </div>
+        </div>
+    </div>
+
+        {% include 'frontend/base_js.html' %}
+        <br>
+        {% include 'frontend/base_footer.html' %}
+    </body>
+</html>

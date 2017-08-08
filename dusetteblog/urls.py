@@ -13,9 +13,20 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url
+from django.conf.urls import url, include
 from django.contrib import admin
+from django.views.generic.base import RedirectView
+from django.conf.urls.static import static
+from django.conf import settings
+
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-]
+    url(r'^ckeditor/', include('ckeditor_uploader.urls')),
+    url(r'^favicon\.ico$', RedirectView.as_view(url='/static/frontend/img/favicon.ico')),
+    url(r'', include('dusetteblog.apps.frontend.urls')),
+    url(r'', include('dusetteblog.apps.blog.urls')),
+    url(r'', include('dusetteblog.apps.contact.urls')),
+    url(r'', include('dusetteblog.apps.item_shop_specials.urls'))
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

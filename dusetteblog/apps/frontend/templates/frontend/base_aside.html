@@ -1,0 +1,41 @@
+{% load staticfiles %}
+
+<h4><strong>ABOUT ME</strong></h4>
+<hr>
+<img class="img-circle center-block" style="max-width: 300px;" src="{% static 'frontend/img/Ronin-Dusette-Profile-Pic.jpg' %}">
+<div class="row" style="height: 170px;">
+    <div class="col-md-12">
+        <br>
+        <p>
+            Hi! I am Ronin Dusette. I have many passions; photography, technology, music, travel, martial arts, gaming, cooking... Just whatever tickles my fancy. When I am out on adventures, I have things I would like to share, which is why I created this blog. From visual art, cooking and tech tips, and pretty much anything else I can think of to write will be verbally and visually painted here on this canvas. I hope you enjoy following me on my journey through life. Engage in conversations with me, ask questions, share your thoughts and art. I hope you enjoy what you see here. Thanks for visiting!
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <hr>
+        <h4><strong>FOLLOW ME</strong><span class="addthis_inline_follow_toolbox_498g pull-right" style="margin-top: -20px;"></span></h4>
+        <hr>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h4 class="text-center"><strong>RECENT INSTAGRAM POSTS</strong></h4>
+        <hr>
+        <iframe src="//lightwidget.com/widgets/52d380a32bed5334b563dae214317c10.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+        <hr>
+    </div>
+</div>
+{% if specials %}
+<div class="row">
+    <div class="col-md-12 img-post-img">
+        <h4 class="text-center"><strong>ITEM SHOP SPECIALS</strong></h4>
+        {% for special in specials %}
+        <hr>
+        <a href="{{ special.item_url }}"><img src="/media/{{ special.photo }}" style="max-width: 100%" alt="" class="img-clickable"></a>
+        <h4 class="text-center"><strong>{{ special.name }}</strong></h4>
+
+        {% endfor %}
+    </div>
+</div>
+{% endif %}

@@ -37,8 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'imagekit',
+    'ckeditor',
+    'ckeditor_uploader',
     'dusetteblog.apps.frontend',
     'dusetteblog.apps.blog',
+    'dusetteblog.apps.contact',
+    'dusetteblog.apps.item_shop_specials',
 ]
 
 MIDDLEWARE = [
@@ -120,4 +125,26 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_temp')
 STATIC_URL = '/static/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media_temp')
+MEDIA_URL = '/media/'
+
+CKEDITOR_JQUERY_URL = 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'
+
+CKEDITOR_UPLOAD_PATH = "uploads/"
+
+CKEDITOR_IMAGE_BACKEND = 'pillow'
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'stylesSet': [
+            {
+                "name": 'Image',
+                "element": 'img',
+                "attributes": {'class': 'face'},
+            },
+        ],
+    },
+}

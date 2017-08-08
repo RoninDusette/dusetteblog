@@ -1,0 +1,15 @@
+{% extends 'frontend/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+{% for category in category_list reversed %}
+        <a href="{% url 'category-detail' slug=category.slug %}">
+        <div class="row">
+            <div class="col-md-6">
+                <img class="img-clickable" src="/media/{{ category.photo }}" style="width: 100%" alt="{{ category.name }}">
+            </div>
+        </div>
+        <br>
+        </a>
+    {% endfor %}
+{% endblock content %}
