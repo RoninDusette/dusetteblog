@@ -112,6 +112,10 @@ body, html {
     background-color: white !important;
 }
 
+.title-font {
+    font-family: 'Prosto One', cursive;
+}
+
 .nav-logo {
     margin-top: -13px;
     max-width: 47px;
@@ -167,7 +171,7 @@ h3, h4 {
 }
 
 h5, h6, p {
-    font-family: 'Cambay', sans-serif !important;
+    font-family: 'Cambay', sans-serif;
 }
 
 .main-content, .img-post-img, .bx-wrapper {
@@ -183,9 +187,8 @@ h5, h6, p {
 }
 
 .footer-main {
-    height: 200px;
-    max-height: 200px;
-    background-color: rgba(62,62,62,1);
+    height: 40px;
+    max-height: 40px;
 }
 
 hr {
