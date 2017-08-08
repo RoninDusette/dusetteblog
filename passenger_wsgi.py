@@ -7,6 +7,6 @@ cwd = os.getcwd()
 sys.path.append(cwd)
 sys.path.append(cwd + '/blog.dusette.net')  #You must add your project here
 
-os.environ['DJANGO_SETTINGS_MODULE'] = "HeavyCrown.settings_production"
+os.environ['DJANGO_SETTINGS_MODULE'] = "dusetteblog.settings_production"
 from django.core.wsgi import get_wsgi_application
 application = get_wsgi_application()
