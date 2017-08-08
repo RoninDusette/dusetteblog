@@ -4,9 +4,6 @@
 {% block title %}Ronin Dusette | Insights and Ramblings{% endblock title %}
 
 {% block content %}
-    <div class="container main-content">
-        <div class="row">
-            <div class="col-md-8">
                 <div class="row">
                     <div class="col-md-12">
                                         <hr>
@@ -36,6 +33,11 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
+                                        <p>{% autoescape off %}{{ article.body|truncatechars:140 }}{% endautoescape %}</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
                                         <a href="{% url 'article-detail' slug=article.slug %}">READ MORE</a>
                                     </div>
                                 </div>
@@ -46,5 +48,4 @@
                 {% endfor %}
                     </div>
                 </div>
-            </div>
 {% endblock content %}

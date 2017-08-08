@@ -2,12 +2,9 @@
 {% load staticfiles %}
 
 {% block content %}
-
-    <div class="container main-content">
-        <div class="row">
-            <div class="col-md-8">
                 <div class="row">
                     <div class="col-md-12">
+                    <h4><strong>ARTICLES ARCHIVE</strong></h4>
                         {% for article in article_list reversed %}
                             <a href="{% url 'article-detail' slug=article.slug %}">
                                 <div class="row">
@@ -35,16 +32,15 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-12"
-                                            <a href="{% url 'article-detail' slug=article.slug %}">READ MORE</a>
+                                            <div class="col-md-12">
+                                                <a href="{% url 'article-detail' slug=article.slug %}">READ MORE</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
                             <br>
                             </a>
                         {% endfor %}
                     </div>
                 </div>
-            </div>
 {% endblock content %}

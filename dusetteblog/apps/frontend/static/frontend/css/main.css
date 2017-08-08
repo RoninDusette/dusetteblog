@@ -108,7 +108,7 @@ body, html {
 
 .container {
     margin-top: 250px;
-    width: 80% !important;
+    width: 90% !important;
     background-color: white !important;
 }
 
@@ -158,6 +158,10 @@ h1, h2, h3, h4, .img-post-title {
     font-family: 'Julius Sans One', sans-serif !important;
 }
 
+.text-red {
+    color: #420E09 !important;
+}
+
 h3, h4 {
     color: #420E09 !important;
 }
@@ -181,6 +185,7 @@ h5, h6, p {
 .footer-main {
     height: 200px;
     max-height: 200px;
+    background-color: rgba(62,62,62,1);
 }
 
 hr {
