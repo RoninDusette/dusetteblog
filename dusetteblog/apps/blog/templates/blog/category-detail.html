@@ -9,10 +9,11 @@
     </div>
     <br>
 {% for article in article_list reversed %}
+{% if article.is_published == True %}
          <a href="{% url 'article-detail' slug=article.slug %}" class="img-post-img">
         <div class="row article-section">
             <div class="col-md-6">
-                <img class="img-clickable" src="/media/{{ article.photo }}" style="width: 100%" alt="{{ article.title }}">
+                <img class="img-clickable" src="/media/{{ article.photo_thumb }}" style="width: 100%" alt="{{ article.title }}">
             </div>
             <div class="col-md-6">
                 <div class="row">
@@ -44,5 +45,6 @@
         </div>
         <br>
         </a>
+{% endif %}
     {% endfor %}
 {% endblock content %}

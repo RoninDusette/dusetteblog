@@ -10,10 +10,11 @@
                 <h4><strong>RECENT ARTICLES</strong></h4>
                 <hr>
                 {% for article in articles|slice:':6' reversed %}
+                        {% if article.is_published == True %}
                     <a href="{% url 'article-detail' slug=article.slug %}" class="img-post-img">
                         <div class="row article-section">
                             <div class="col-md-6">
-                                <img class="img-clickable" src="/media/{{ article.photo }}" style="width: 100%" alt="{{ article.title }}">
+                                <img class="img-clickable" src="/media/{{ article.photo_thumb }}" style="width: 100%" alt="{{ article.title }}">
                             </div>
                             <div class="col-md-6">
                                 <div class="row">
@@ -45,6 +46,49 @@
                         </div>
                         <br>
                     </a>
+                        {% endif %}
+                        {% if user.is_authenticated == True and article.is_published == False %}
+                            <a href="{% url 'article-detail' slug=article.slug %}" class="img-post-img">
+                        <div class="row article-section">
+                            <div class="col-md-6">
+                                <img class="img-clickable" src="/media/{{ article.photo }}" style="width: 100%" alt="{{ article.title }}">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <a href="{% url 'category-detail' slug=article.category.slug %}">{{ article.category.name }}</a> | {{ article.date_added }}
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h3><strong>{{ article.title }}</strong></h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h4>{{ article.subtitle }}</h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p>{% autoescape off %}{{ article.body|truncatechars:140 }}{% endautoescape %}</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <a href="{% url 'article-detail' slug=article.slug %}">READ MORE</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h3 style="color: red;"><strong>UNPUBLISHED</strong></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </a>
+                        {% endif %}
                 {% endfor %}
                     </div>
                 </div>

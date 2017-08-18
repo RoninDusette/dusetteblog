@@ -178,6 +178,10 @@ h5, h6, p {
     border: none !important;
 }
 
+p {
+    font-size: 18px;
+}
+
 .main-content {
     padding-top: 50px;
 }
