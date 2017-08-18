@@ -5,18 +5,15 @@
     <div class="row" style="margin-top: -20px;">
         <div class="col-md-12 text-center">
             <h1 class="text-red"><strong>{{ article.title }}</strong></h1>
+            <h2>{{ article.subtitle }}</h2>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12">
-            <img src="/media/{{ article.photo_main }}" class="img-responsive center-block" style="max-width: 720px;" alt="">
+            <img src="/media/{{ article.photo_main }}" class="img-responsive center-block" alt="">
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <h2>{{ article.subtitle }}</h2>
-        </div>
-    </div>
+<br>
     <div class="row">
         <div class="col-md-12 text-right">
             <h4><em><a href="{% url 'category-detail' slug=article.category.slug %}">{{ article.category }}</a> | {{ article.date_added }}</em></h4>
