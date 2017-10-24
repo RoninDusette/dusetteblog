@@ -1,5 +1,6 @@
 {% extends 'frontend/base.html' %}
 {% load staticfiles %}
+{% load static %}
 
 {% block title %}Ronin Dusette | Insights and Ramblings{% endblock title %}
 
@@ -14,12 +15,12 @@
                     <a href="{% url 'article-detail' slug=article.slug %}" class="img-post-img">
                         <div class="row article-section">
                             <div class="col-md-6">
-                                <img class="img-clickable" src="/media/{{ article.photo_thumb }}" style="width: 100%" alt="{{ article.title }}">
+                                <img class="img-clickable" src="{{ article.photo_main.url }}" style="width: 100%" alt="{{ article.title }}">
                             </div>
                             <div class="col-md-6">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <a href="{% url 'category-detail' slug=article.category.slug %}">{{ article.category.name }}</a> | {{ article.date_added }}
+                                        <a href="{% url 'category-detail' slug=article.category.slug %}">{{ article.category.name }}</a> | {{ article.date_updated }}
                                     </div>
                                 </div>
                                 <div class="row">
@@ -51,7 +52,7 @@
                             <a href="{% url 'article-detail' slug=article.slug %}" class="img-post-img">
                         <div class="row article-section">
                             <div class="col-md-6">
-                                <img class="img-clickable" src="/media/{{ article.photo }}" style="width: 100%" alt="{{ article.title }}">
+                                <img class="img-clickable" src="{{ article.photo_small.url }}" style="width: 100%" alt="{{ article.title }}">
                             </div>
                             <div class="col-md-6">
                                 <div class="row">

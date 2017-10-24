@@ -27,7 +27,7 @@ class Article(models.Model):
     date_added = models.DateField(auto_now_add=True)
     date_updated = models.DateField(auto_now=True)
     body = RichTextUploadingField()
-    photo_thumb = ProcessedImageField(format='JPEG', options={'quality': 60}, processors=[ResizeToFill(720, 510)], blank=True, null=True)
+    photo_small = ProcessedImageField(format='JPEG', options={'quality': 60}, processors=[ResizeToFill(720, 510)], blank=True, null=True)
     photo_main = ProcessedImageField(format='JPEG', options={'quality': 70}, blank=True, null=True)
     is_published = models.BooleanField()
     slug = models.SlugField(blank=True, editable=False)

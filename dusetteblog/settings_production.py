@@ -131,8 +131,7 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'public/static')
 STATIC_URL = '/static/'
 
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'public/static/media')
-MEDIA_ROOT = "/home/djyoshabyd/blog.dusette.net/public/static/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, 'public/static/media')
 MEDIA_URL = '/media/'
 
 CKEDITOR_JQUERY_URL = 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'

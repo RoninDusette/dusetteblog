@@ -3,7 +3,13 @@
 <!doctype html>
 <html class="no-js" lang="">
     <head>
-        <title>{% block title %}{% endblock title %}</title>
+        <title>Ronin Dusette's Ramblings - {% block title %}{% endblock title %}</title>
+        <meta property="og:url" content="https://blog.dusette.net{{ request.path }}" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="{% block fb_title %}{% endblock fb_title %}" />
+        <meta property="og:description"  content="{% block fb_subtitle %}{% endblock fb_subtitle %}" />
+        <meta property="og:image"  content="https://blog.dusette.net{% block fb_image %}{% endblock fb_image %}" />
+        <meta property="og:site_name" content="Ronin Dusette - Insights and Ramblings" />
         {% include 'frontend/base_head.html' %}
     </head>
     <body>

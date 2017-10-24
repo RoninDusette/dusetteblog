@@ -1,6 +1,13 @@
 {% extends 'frontend/base.html' %}
 {% load staticfiles %}
 
+
+{% block title %}{{ article.title }}{% endblock title %}
+{% block fb_title %}{{ article.title }}{% endblock fb_title %}
+{% block fb_subtitle %}{{ article.subtitle }}{% endblock fb_subtitle %}
+{% block fb_image %}{{ article.photo_main.url }}{% endblock fb_image %}
+
+
 {% block content %}
     <div class="row" style="margin-top: -20px;">
         <div class="col-md-12 text-center">
@@ -9,7 +16,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-6 col-md-push-3">
             <img src="/media/{{ article.photo_main }}" class="img-responsive center-block" alt="">
         </div>
     </div>
