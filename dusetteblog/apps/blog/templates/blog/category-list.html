@@ -6,7 +6,7 @@
         <a href="{% url 'category-detail' slug=category.slug %}">
         <div class="row">
             <div class="col-md-6">
-                <img class="img-clickable" src="/media/{{ category.photo }}" style="width: 100%" alt="{{ category.name }}">
+                <img class="img-clickable" src="{{ category.photo.url }}" style="width: 100%" alt="{{ category.name }}">
             </div>
         </div>
         <br>
